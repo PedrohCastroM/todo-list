@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <script type="module" src="./index.js" defer></script>
+</head>
+<body>
+    <section class="container" style="margin-top:4% ;">
+       <hgroup>
+            <h1>TODO-LIST</h1>
+            <p>my daily task list</p>
+       </hgroup>
+               <div class="grid">
+            <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            />
+            <button id="add" class="primary">Add</button>
+        </div>
+        <div class="grid" style="margin-top: 20px">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                </tbody>                                   
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td id="total">Total: 0</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+    </section>
+</body>
+</html>
